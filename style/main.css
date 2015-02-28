@@ -391,71 +391,62 @@ hr {
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
-  .tile.tile-2 .tile-inner {
-    background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-4 .tile-inner {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
-  .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
-  .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
-  .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
-  .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-128 .tile-inner {
-        font-size: 25px; } }
-  .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-256 .tile-inner {
-        font-size: 25px; } }
-  .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-512 .tile-inner {
-        font-size: 25px; } }
-  .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-1024 .tile-inner {
-        font-size: 15px; } }
-  .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-2048 .tile-inner {
-        font-size: 15px; } }
-  .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
-    font-size: 30px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+ 315   .tile.tile-2 .tile-inner { 
+316     background: url(http://local.pcboomradio.com/sitebuildercontent/sitebuilderpictures/denver_mountains_3.jpg); 
+317     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); } 
+318   .tile.tile-4 .tile-inner { 
+319     background: url(http://ts1.mm.bing.net/th?&id=HN.608022607721269707&w=300&h=300&c=0&pid=1.9&rs=0&p=0); 
+320     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); } 
+321   .tile.tile-8 .tile-inner { 
+322     background: url(http://www.thomascook.in/tcportal/images/holiday/PKG142253/1_UN1434478.jpg); } 
+323   .tile.tile-16 .tile-inner { 
+324     background: url(http://www.painters-online.co.uk/userfiles/articles/SummerLandscape_38887.jpg); } 
+325   .tile.tile-32 .tile-inner { 
+326     background: url(http://ts3.mm.bing.net/th?id=HN.608038688073123906&pid=1.7) } 
+327   .tile.tile-64 .tile-inner { 
+328     background: url(http://ts1.mm.bing.net/th?&id=HN.608052676782981848&w=300&h=300&c=0&pid=1.9&rs=0&p=0); } 
+329   .tile.tile-128 .tile-inner { 
+330     background: url(http://ts1.mm.bing.net/th?&id=HN.607991632414575038&w=300&h=300&c=0&pid=1.9&rs=0&p=0); 
+331     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); 
+332     font-size: 45px; } 
+333     @media screen and (max-width: 520px) { 
+334       .tile.tile-128 .tile-inner { 
+335         font-size: 25px; } } 
+336   .tile.tile-256 .tile-inner { 
+337     background: url(http://ts1.mm.bing.net/th?id=HN.608005346242922625&pid=1.7); 
+338     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); 
+339     font-size: 45px; } 
+340     @media screen and (max-width: 520px) { 
+341       .tile.tile-256 .tile-inner { 
+342         font-size: 25px; } } 
+343   .tile.tile-512 .tile-inner { 
+344     background: url(http://media-cache-ak0.pinimg.com/736x/ae/b7/60/aeb76020a44b2586e31b9152bc7bebb9.jpg); 
+345     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); 
+346     font-size: 45px; } 
+347     @media screen and (max-width: 520px) { 
+348       .tile.tile-512 .tile-inner { 
+349         font-size: 25px; } } 
+350   .tile.tile-1024 .tile-inner { 
+351     background: url(http://www.yoavpeled.com/wp-content/uploads/2012/04/Landscapes-18-150x150.jpg); 
+352     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); 
+353     font-size: 35px; } 
+354     @media screen and (max-width: 520px) { 
+355       .tile.tile-1024 .tile-inner { 
+356         font-size: 15px; } } 
+357   .tile.tile-2048 .tile-inner { 
+358     background: url(http://members.shaw.ca/kbroadbent/landscapes/summer_meadow_th.jpg); 
+359     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); 
+360     font-size: 35px; } 
+361     @media screen and (max-width: 520px) { 
+362       .tile.tile-2048 .tile-inner { 
+363         font-size: 15px; } } 
+364   .tile.tile-super .tile-inner { 
+365     background: url(http://static.hdw.eweb4.com/media/thumbs/1/15/141577.jpg); 
+366     font-size: 30px; } 
+367     @media screen and (max-width: 520px) { 
+368       .tile.tile-super .tile-inner { 
+369         font-size: 10px; } } 
+
 
 @-webkit-keyframes appear {
   0% {
