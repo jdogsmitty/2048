@@ -1,109 +1,107 @@
 <!DOCTYPE html> 
-2 <html> 
-3 <head> 
-4   <meta charset="utf-8"> 
-5   <title>2048</title> 
-6 
+ <html> 
+ <head> 
+   <meta charset="utf-8"> 
+   <title>2048</title> 
  
-7   <link href="style/main.css" rel="stylesheet" type="text/css"> 
-8   <link rel="shortcut icon" href="favicon.ico"> 
-9   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png"> 
-10   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ --> 
-11   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina --> 
-12   <meta name="apple-mobile-web-app-capable" content="yes"> 
-13   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-14 
  
-15   <meta name="HandheldFriendly" content="True"> 
-16   <meta name="MobileOptimized" content="320"> 
-17   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"> 
-18 </head> 
-19 <body> 
-20   <div class="container"> 
-21     <div class="heading"> 
-22       <h1 class="title">2048</h1> 
-23       <div class="scores-container"> 
-24         <div class="score-container">0</div> 
-25         <div class="best-container">0</div> 
-26       </div> 
-27     </div> 
-28 
+   <link href="style/main.css" rel="stylesheet" type="text/css"> 
+   <link rel="shortcut icon" href="favicon.ico"> 
+   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png"> 
+   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ --> 
+   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina --> 
+   <meta name="apple-mobile-web-app-capable" content="yes"> 
+   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
  
-29     <div class="above-game"> 
-30       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p> 
-31       <a class="restart-button">New Game</a> 
-32     </div> 
-33 
  
-34     <div class="game-container"> 
-35       <div class="game-message"> 
-36         <p></p> 
-37         <div class="lower"> 
-38 	        <a class="keep-playing-button">Keep going</a> 
-39           <a class="retry-button">Try again</a> 
-40         </div> 
-41       </div> 
-42 
+   <meta name="HandheldFriendly" content="True"> 
+   <meta name="MobileOptimized" content="320"> 
+   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"> 
+ </head> 
+ <body> 
+   <div class="container"> 
+     <div class="heading"> 
+       <h1 class="title">2048</h1> 
+       <div class="scores-container"> 
+         <div class="score-container">0</div> 
+         <div class="best-container">0</div> 
+       </div> 
+     </div> 
  
-43       <div class="grid-container"> 
-44         <div class="grid-row"> 
-45           <div class="grid-cell"></div> 
-46           <div class="grid-cell"></div> 
-47           <div class="grid-cell"></div> 
-48           <div class="grid-cell"></div> 
-49         </div> 
-50         <div class="grid-row"> 
-51           <div class="grid-cell"></div> 
-52           <div class="grid-cell"></div> 
-53           <div class="grid-cell"></div> 
-54           <div class="grid-cell"></div> 
-55         </div> 
-56         <div class="grid-row"> 
-57           <div class="grid-cell"></div> 
-58           <div class="grid-cell"></div> 
-59           <div class="grid-cell"></div> 
-60           <div class="grid-cell"></div> 
-61         </div> 
-62         <div class="grid-row"> 
-63           <div class="grid-cell"></div> 
-64           <div class="grid-cell"></div> 
-65           <div class="grid-cell"></div> 
-66           <div class="grid-cell"></div> 
-67         </div> 
-68       </div> 
-69 
  
-70       <div class="tile-container"> 
-71 
+     <div class="above-game"> 
+       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p> 
+       <a class="restart-button">New Game</a> 
+     </div> 
  
-72       </div> 
-73     </div> 
-74 
  
-75     <p class="game-explanation"> 
-76       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong> 
-77     </p> 
-78     <hr> 
-79     <p> 
-80     <strong class="important">Note:</strong> This site is not the official version of 2048. You can play the official version on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> Other versions should be used with caution.  This however is a safe version I forked and edited. 
-81     </p> 
-82     <hr> 
-83     <p> 
-84     Official version created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a> This version is created by Julian Smith.  I have one rule: have fun and try to get 2048.  
-85     </p> 
-86   </div> 
-87 
+     <div class="game-container"> 
+       <div class="game-message"> 
+         <p></p> 
+         <div class="lower"> 
+ 	        <a class="keep-playing-button">Keep going</a> 
+           <a class="retry-button">Try again</a> 
+         </div> 
+       </div> 
  
-88   <script src="js/bind_polyfill.js"></script> 
-89   <script src="js/classlist_polyfill.js"></script> 
-90   <script src="js/animframe_polyfill.js"></script> 
-91   <script src="js/keyboard_input_manager.js"></script> 
-92   <script src="js/html_actuator.js"></script> 
-93   <script src="js/grid.js"></script> 
-94   <script src="js/tile.js"></script> 
-95   <script src="js/local_storage_manager.js"></script> 
-96   <script src="js/game_manager.js"></script> 
-97   <script src="js/application.js"></script> 
-98 </body> 
-99 </html> 
+ 
+       <div class="grid-container"> 
+         <div class="grid-row"> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+         </div> 
+         <div class="grid-row"> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+         </div> 
+         <div class="grid-row"> 
+           <div class="grid-cell"></div> 
+         <div class="grid-cell"></div> 
+          <div class="grid-cell"></div> 
+          <div class="grid-cell"></div> 
+         </div> 
+         <div class="grid-row"> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+           <div class="grid-cell"></div> 
+         </div> 
+       </div> 
+ 
+ 
+       <div class="tile-container"> 
+ 
+ 
+       </div> 
+     </div> 
+ 
+      <p class="game-explanation"> 
+       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong> 
+     </p> 
+     <hr> 
+     <p> 
+     <strong class="important">Note:</strong> This site is not the official version of 2048. You can play the official version on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> Other versions should be used with caution.  This however is a safe version I forked and edited. 
+     </p> 
+     <hr> 
+     <p> 
+     Official version created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a> This version is created by Julian Smith.  I have one rule: have fun and try to get 2048.  5     </p> 
+   </div> 
+
+ 
+   <script src="js/bind_polyfill.js"></script> 
+   <script src="js/classlist_polyfill.js"></script> 
+   <script src="js/animframe_polyfill.js"></script> 
+   <script src="js/keyboard_input_manager.js"></script> 
+   <script src="js/html_actuator.js"></script> 
+   <script src="js/grid.js"></script> 
+   <script src="js/tile.js"></script> 
+   <script src="js/local_storage_manager.js"></script> 
+   <script src="js/game_manager.js"></script> 
+   <script src="js/application.js"></script> 
+ </body> 
+ </html> 
 
